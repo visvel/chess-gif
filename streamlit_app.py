@@ -92,6 +92,6 @@ if uploaded_file and lines_input:
                 file_name="output.gif",
                 mime="image/gif"
             )
-            st.image(gif_bytes, caption="Preview of generated GIF", use_column_width=True)
+            st.image(gif_bytes, caption="Preview of generated GIF", use_container_width=True)
     except Exception as e:
         st.error(f"Something went wrong: {e}")
